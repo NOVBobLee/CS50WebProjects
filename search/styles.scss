@@ -1,0 +1,243 @@
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	font-family: sans-serif;
+	margin: 0px;
+}
+
+input {
+	padding: 13px;
+	width: 300px;
+
+	&[type="submit"] {
+		font-size: 14px;
+		width: 150px;
+		background-color: white;
+		border: 1px solid white;
+	}
+}
+
+.headerbkgd {
+	height: 60px;
+	background-color: #f2f2f2;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.headerlogo {
+		height: 35px;
+		margin-left: 15px;
+	}
+
+	a {
+		color: black;
+		padding: 10px;
+		font-size: 12px;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	.links {
+		margin-left: auto;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+
+	.links2 {
+		padding: 0px;
+		margin: auto;
+		margin-right: 10px;
+	}
+}
+
+.header2 {
+	display: flex;
+	align-items: center;
+	height: 75px;
+	border-bottom: 1px solid #f2f2f2;
+
+	.title2 {
+		margin-left: 40px;
+		color: #d93025;
+		font-size: 18px;
+	}
+}
+
+.searchblock {
+	$border_radius : 25px;
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	justify-content: center;
+	align-items: center;
+
+	.logopos {
+		position: relative;
+		margin: 10px;
+
+		.logosubtext {
+			position: absolute;
+			font-size: 14px;
+			color: #47abfb;
+			width: 50px;
+			bottom: 0;
+			right: 0;
+		}
+	}
+	
+	.empty1 {
+		height: 10px;
+	}
+
+	.formw {
+		min-width: 50%;
+	}
+
+	.inputbox {
+		display: flex;
+		flex-direction: row;
+		border: 1px solid lightgray;
+		border-radius: $border_radius;
+		padding-left: 10px;
+		padding-right: 18px;
+
+		&:hover {
+			box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+		}
+
+		.svgs {
+			height: 20px;
+			width: 20px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+
+		input {
+			border: none;
+			border-radius: $border_radius;
+			width: 85%;
+		}
+
+		.btn {
+			border: 0px;
+			height: 23px;
+			width: 23px;
+			margin: auto;
+			background: transparent;
+			padding: 0px;
+			cursor: pointer;
+
+			.svgs2 {
+				height: 21px;
+				width: 21px;
+				margin: auto;
+			}
+		}
+	}
+	
+	.subm {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		input {
+			margin: 0 10px;
+			text-align: center;
+			
+			&:hover {
+				border: 1px solid lightgrey;
+				border-radius: 5px;
+				box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+			}
+		}
+	}
+}
+
+.advsearch2 {
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 40px;
+
+	.findpw {
+		position: relative;
+		min-height: 75px;
+
+		span {
+			display: inline-block;
+			min-width: 132px;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			font-size: 15px;
+		}
+	}
+
+	.formgrp {
+		margin-right: 0px;
+
+		.rowil {
+			height: 50px;
+			
+			label {
+				display: inline-block;
+				margin: auto;
+				width: 180px;
+				font-size: 12px;
+			}
+
+			input {
+				height: 25px;
+				width: 460px;
+				border-radius: 0px;
+				margin: auto;
+				padding: 2px 16px;
+				border: 1px solid #c0c0c0;
+			}
+		}
+
+		.rightbox {
+			text-align: right;
+			max-width: 680px;
+			min-width: 495px;
+
+			input[type="submit"] {
+				font-size: 12px;
+				color: white;
+				border: 1px solid #3079ed;
+				background-color: #4889f0;
+				padding: 0px 12px;
+				height: 30px;
+				width: 120px;
+				opacity: 0.9;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+.foot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: auto;
+	height: 35px;
+	background-color: #f2f2f2;
+	border: 1px solid #dadce0;
+	
+	span {
+		font-size: 14px;
+		color: #717170;
+		margin: auto 25px;
+	}
+}

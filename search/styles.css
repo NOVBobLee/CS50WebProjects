@@ -1,0 +1,176 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0px; }
+
+input {
+  padding: 13px;
+  width: 300px; }
+  input[type="submit"] {
+    font-size: 14px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid white; }
+
+.headerbkgd {
+  height: 60px;
+  background-color: #f2f2f2; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .header .headerlogo {
+    height: 35px;
+    margin-left: 15px; }
+  .header a {
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none; }
+    .header a:hover {
+      text-decoration: underline; }
+  .header .links {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px; }
+  .header .links2 {
+    padding: 0px;
+    margin: auto;
+    margin-right: 10px; }
+
+.header2 {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  border-bottom: 1px solid #f2f2f2; }
+  .header2 .title2 {
+    margin-left: 40px;
+    color: #d93025;
+    font-size: 18px; }
+
+.searchblock {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: center;
+  align-items: center; }
+  .searchblock .logopos {
+    position: relative;
+    margin: 10px; }
+    .searchblock .logopos .logosubtext {
+      position: absolute;
+      font-size: 14px;
+      color: #47abfb;
+      width: 50px;
+      bottom: 0;
+      right: 0; }
+  .searchblock .empty1 {
+    height: 10px; }
+  .searchblock .formw {
+    min-width: 50%; }
+  .searchblock .inputbox {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    padding-left: 10px;
+    padding-right: 18px; }
+    .searchblock .inputbox:hover {
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+    .searchblock .inputbox .svgs {
+      height: 20px;
+      width: 20px;
+      margin-top: auto;
+      margin-bottom: auto; }
+    .searchblock .inputbox input {
+      border: none;
+      border-radius: 25px;
+      width: 85%; }
+    .searchblock .inputbox .btn {
+      border: 0px;
+      height: 23px;
+      width: 23px;
+      margin: auto;
+      background: transparent;
+      padding: 0px;
+      cursor: pointer; }
+      .searchblock .inputbox .btn .svgs2 {
+        height: 21px;
+        width: 21px;
+        margin: auto; }
+  .searchblock .subm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .searchblock .subm input {
+      margin: 0 10px;
+      text-align: center; }
+      .searchblock .subm input:hover {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
+
+.advsearch2 {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px; }
+  .advsearch2 .findpw {
+    position: relative;
+    min-height: 75px; }
+    .advsearch2 .findpw span {
+      display: inline-block;
+      min-width: 132px;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      font-size: 15px; }
+  .advsearch2 .formgrp {
+    margin-right: 0px; }
+    .advsearch2 .formgrp .rowil {
+      height: 50px; }
+      .advsearch2 .formgrp .rowil label {
+        display: inline-block;
+        margin: auto;
+        width: 180px;
+        font-size: 12px; }
+      .advsearch2 .formgrp .rowil input {
+        height: 25px;
+        width: 460px;
+        border-radius: 0px;
+        margin: auto;
+        padding: 2px 16px;
+        border: 1px solid #c0c0c0; }
+    .advsearch2 .formgrp .rightbox {
+      text-align: right;
+      max-width: 680px;
+      min-width: 495px; }
+      .advsearch2 .formgrp .rightbox input[type="submit"] {
+        font-size: 12px;
+        color: white;
+        border: 1px solid #3079ed;
+        background-color: #4889f0;
+        padding: 0px 12px;
+        height: 30px;
+        width: 120px;
+        opacity: 0.9; }
+        .advsearch2 .formgrp .rightbox input[type="submit"]:hover {
+          opacity: 1; }
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  height: 35px;
+  background-color: #f2f2f2;
+  border: 1px solid #dadce0; }
+  .foot span {
+    font-size: 14px;
+    color: #717170;
+    margin: auto 25px; }
+
+/*# sourceMappingURL=styles.css.map */
