@@ -89,7 +89,7 @@ def search(request):
 				return render(request, "encyclopedia/error.html", {
 					"sidebarform": sidebarform
 				})
-			# Pecfect match, go to the 
+			# Pecfect match, go to the entry page
 			elif len(fit_pages) == 1 and fit_pages[0].lower() == search:
 				print("search2")
 				url_found = reverse('browse', kwargs={"titlelink": fit_pages[0]})
@@ -113,7 +113,7 @@ def search(request):
 		return HttpResponseRedirect(url_index)
 
 
-# Create the new entry
+# Create a new entry
 def create(request):
 	# Go to the create.html
 	if request.method == "GET":
@@ -149,7 +149,7 @@ def create(request):
 		return HttpResponseRedirect(url_index)
 
 
-# Edit any entry pages
+# Edit an entry page
 def edit(request):
 	# If got a post from any entry pages, then go to the edit page
 	if request.method == "POST":
