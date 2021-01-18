@@ -1,0 +1,15 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %}
+	Search Result
+{% endblock %}
+
+{% block body %}
+	<h1>Search Result</h1>
+	<ul>
+		{% for page in fit_pages %}
+			<li>
+				<a href="{% url 'browse' title=page %}">{{ page }}</a>
+			</li>
+		{% endfor %}
+{% endblock %}
